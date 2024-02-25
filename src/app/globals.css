@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 .active-link {
   position: relative;
 }
@@ -15,4 +14,36 @@
   height: 2px;
   width: 100%;
   background-color: #83cdff;
+}
+
+.expert-outermost {
+  background-image: url("../../public/assets/expert-elipse-3.png");
+  background-repeat: no-repeat;
+  width: 74%;
+}
+.expert-img {
+  width: 20%;
+}
+
+.ex-out {
+  display: flex;
+  flex-direction: row;
+}
+.expert-container {
+  background-image: url("../../public/assets/expert-elipse-2.png");
+  background-repeat: no-repeat;
+  color: white;
+  background-color: rgba(56, 185, 230, 0.05);
+  height: 250px;
+}
+
+.sub-exp-cont {
+  background-image: url("../../public/assets/expert-elipse-1.png");
+  background-repeat: no-repeat;
+  height: 250px;
+}
+
+.expert-text {
+  padding-top: 30px;
+  padding-left: 50px;
 }

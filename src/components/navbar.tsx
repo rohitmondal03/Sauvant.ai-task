@@ -1,11 +1,10 @@
 "use client"
 
-import Image from "next/image"
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
+import Logo from "./logo";
 import Button from "./button";
-import logo from "../../public/assets/logo.png"
 
 
 type TNavLinks = {
@@ -40,18 +39,7 @@ export default function Navbar() {
 
   return (
     <nav className="py-5 px-10 flex items-center justify-around">
-      <section className="flex items-center justify-center gap-x-2">
-        <Image
-          src={logo}
-          alt="logo img"
-          height={125}
-          width={125}
-        />
-        <div className="space-y-1 text-sky-500">
-          <h1 className="text-3xl">CREDITSEA</h1>
-          <p>TRUST.COMFORT.PROSPER</p>
-        </div>
-      </section>
+      <Logo textColor="text-primary-col" />
 
 
       <section className="flex items-center gap-x-7 text-lg">
@@ -67,7 +55,7 @@ export default function Navbar() {
       </section>
 
 
-      <section className="space-x-4">
+      <section className="space-x-10">
         <Link
           href={"/"}
           className="font-bold text-primary-col"
